@@ -1,6 +1,6 @@
 <% @posts.each do |post| %>
     <%= image_tag post.user.photo %>
-    <%= post.user.name %>
+    <%= post.user.name  %>
     <%= image_tag post.photo %>
     <%= post.description %>
     
@@ -14,6 +14,7 @@
     <% post.comments.each do |comment| %>
         <p><%= User.find(comment.user_id).name %><%= comment.text %></p>
         <% if comment.user == current_user %>
+
             <%= link_to 'Delete', post_comment_path(post_id: post.id, id: comment.id), method: :delete %>
         <% end %>
     <% end %>
