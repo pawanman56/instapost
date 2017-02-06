@@ -50,7 +50,7 @@ class PostsController < ApplicationController
         params.require(:post).permit(:user_id, :photo, :description)
     end
     
-    def is_owner
+    def is_owner?
         redirect_to root_path if Post.find(params[:id]).user != current_user
     end
 end
