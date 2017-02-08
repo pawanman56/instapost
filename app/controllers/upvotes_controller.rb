@@ -5,7 +5,7 @@ class UpvotesController < ApplicationController
     def create
         @post = Post.find(params[:post_id])
         @post.liked_by current_user
-        redirect_to post_path
+        redirect_to posts_path
     end
     
 end
