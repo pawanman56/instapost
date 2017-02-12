@@ -22,6 +22,10 @@
         <hr>
       <% end %>
     <% end %>
+    
+    <span id="likes_container_<%= @post.id %>">
+      <%= render partial: 'likes', locals: {post: @post} %>
+    </span>
   
     <% if user_signed_in? %>
       <%= simple_form_for Comment.new, url: post_comments_path(@post), method: :post do |f| %>

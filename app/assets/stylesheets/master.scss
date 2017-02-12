@@ -174,14 +174,37 @@ nav {
             font-size: 35px;
         }
         
-        .posts {
+        .stats {
             margin-top: -10px;
             font-size: 16px;
             font-weight: 400;
         }
         
+        .stats ul{
+            margin: 0 auto;
+            padding: 0;
+        } 
+        .stats li {
+            margin: 0 auto;
+            padding-right: 15px;
+            list-style: none;
+            display: inline-block;
+        }
+        
         .follow_btn {
             background-color: #3897f0;
+            border: solid 1px #dbdbdb;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            color: #fff;
+            width: 125px;
+            height: 35px;
+            margin-top: 10px;
+        }
+        
+        .unfollow_btn {
+            background-color: #5bb565;
             border: solid 1px #dbdbdb;
             border-radius: 5px;
             text-align: center;
