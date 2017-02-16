@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   
   acts_as_voter
   
-  def following?(other_user)
+  def following(other_user)
     relationships.find_by(followed_id: other_user.id)
   end
   

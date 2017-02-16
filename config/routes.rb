@@ -18,7 +18,6 @@ Rails.application.routes.draw do
     resources :downvotes, only: :create
   end
   
-  resources :sessions,      only: [:new, :create, :destroy]
   resources :relationships, only: [:create, :destroy]
   
 end
