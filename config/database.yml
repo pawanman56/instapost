@@ -5,7 +5,6 @@ default: &default
       username: username
       password: password
       host:     <%= ENV['IP'] %>
-      timeout: 5000
 
 development:
   <<: *default
